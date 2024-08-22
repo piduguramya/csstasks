@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            /* padding: 5px;  */
+            font-size: 16px;
+            border-radius: 10px;
+            height: 50px;
+            width: 80px;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .container{
+            display: none;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-top: 15px;
+            padding: 20px;
+            width: 70px;
+        }
+        .button:focus~.container{
+            display: block;
+        }
+        p{
+            background-color: black;
+            color: white;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <button class="button" value="menu">click me
+    </button>
+    <div class="container">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact us</p>
+    </div>
+</body>
+</html>
